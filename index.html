@@ -6,7 +6,17 @@
 <body>
 
 <h1>HTML Image</h1>
-<img src="vikings.jpg" alt="vikings" width="1000" height="600"><br><br>
-<button type="button">Button</button>
+<img id="pic1" src="vikings.jpg" alt="vikings" width="1000" height="600"><br><br>
+<button type="submit" id="button1" onclick="changeImage1('pic1')">Change Image</button>
+
+<script>
+
+function changeImage1(imgid){
+	if(imgid=='pic1'){
+		document.getElementById(imgid).src="vikings2.jpg";
+	}
+}
+
+</script>
 </body>
 </html>
